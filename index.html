@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ed6656cc33.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="script.js"></script>
+    <!-- js -->
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header_inner">
+          <div class="header_logo" data-scroll="#intro">МурМяу</div>
+          <nav class="nav" id="nav">
+            <a href="#" class="nav_link" data-scroll="#about">О нас</a>
+            <a href="#" class="nav_link" data-scroll="#services">Услуги</a>
+            <a href="#" class="nav_link" data-scroll="#devices">Мобильность</a>
+            <a href="#" class="nav_link" data-scroll="#works">Наши работы</a>
+            <a href="#" class="nav_link" data-scroll="#blog">Блог</a>
+            <a href="#" class="nav_link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#" class="nav_link">
+              <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              
+              
+              <button id="blnk" class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+            </a>
+            
+          </nav>
+          <button class="burger" id="burger" type="button">
+            <span class="burger_item">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Intro -->
+    <div class="intro" id="intro">
+      <div class="container">
+        <div class="intro_inner" id="intro_inner">
+          <div class="intro_subtitle">
+            <h2>что-то мягкое и теплое</h2>
+          </div>
+          <div class="intro_title">Добро пожаловать в Мур Мяу</div>
+        </div>
+      </div>
+    </div>
+    <!-- section STORY about US -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Что мы делаем</h3>
+          <h2 class="section_title">Немного о нас</h2>
+          <div class="section_text">
+            <p>
+              Мы мягкие и пушистые коты. Впустив нас в свой дом, мы подарим вам
+              бесконечно расслабляющее мурлыканье. Откройте для себя мир
+              <span>"Мур Мяу"</span>
+            </p>
+          </div>
+        </div>
+        <!-- img Kitty -->
+        <div class="card">
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_img">
+                <img
+                  src="https://i.ibb.co/PwKH8Rf/efdd5d104af4b7f873596c260572663f.jpg"
+                  alt="meow"
+                />
+              </div>
+              <div class="card_text">Мур Мур</div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_img">
+                <img
+                  src="https://i.ibb.co/CbhHm2z/depositphotos-72609979-stock-photo-ojos-de-gata.jpg"
+                  alt="meow"
+                />
+              </div>
+              <div class="card_text">Мур Мур</div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_img">
+                <img
+                  src="https://i.ibb.co/3shXkpL/1559798647-2.jpg"
+                  alt="meow"
+                />
+              </div>
+              <div class="card_text">Мур Мур</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- statistics -->
+    <div class="statistics">
+      <div class="container">
+        <div class="stat" id="counter">
+          <div class="stat_item">
+            <div data-num="42" class="stat_count">0</div>
+            <div class="stat_text">Web Design Projects</div>
+          </div>
+          <div class="stat_item">
+            <div data-num="123" class="stat_count">0</div>
+            <div class="stat_text">счастливых клиентов</div>
+          </div>
+          <div class="stat_item">
+            <div data-num="15" class="stat_count">0</div>
+            <div class="stat_text">заслуженных премий</div>
+          </div>
+          <div class="stat_item">
+            <div data-num="99" class="stat_count">0</div>
+            <div class="stat_text">мисок молока</div>
+          </div>
+          <div class="stat_item">
+            <div data-num="24" class="stat_count">0</div>
+            <div class="stat_text">члены</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section We work with -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Мы предоставляем</h3>
+          <h2 class="section_title">Удивительные услуги</h2>
+        </div>
+        <!-- services -->
+        <div class="services">
+          <div class="services_item services_item--border">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/S531ckK/relax.png"
+              alt="relax"
+              border="0"
+            />
+            <div class="services_title">Релакс</div>
+            <div class="services_text">Безграничное расслабление</div>
+          </div>
+
+          <div class="services_item services_item--border">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/D4pfd7q/PHOTOSHOOT.png"
+              alt="PHOTOSHOOT"
+              border="0"
+            />
+            <div class="services_title">фотосессия</div>
+            <div class="services_text">
+              Красивые фотографии в вашем доме в любой момент вашей жизни.
+            </div>
+          </div>
+
+          <div class="services_item services_item--border">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/DGN0Hpj/WALKS.png"
+              alt="WALKS"
+              border="0"
+            />
+
+            <div class="services_title">прогулки</div>
+            <div class="services_text">
+              Человек, идущий на поводке с милой кошкой, всегда выглядит
+              уверенно.
+            </div>
+          </div>
+          <div class="services_item">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/wQj9GB0/MASSAGE.png"
+              alt="MASSAGE"
+              border="0"
+            />
+            <div class="services_title">Массаж</div>
+            <div class="services_text">
+              Это лучше, чем 100 000 тайских массажистов.
+            </div>
+          </div>
+
+          <div class="services_item">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/H7p1RR1/comfort-zone.png"
+              alt="comfort-zone"
+              border="0"
+            />
+
+            <div class="services_title">Создание уюта</div>
+            <div class="services_text">
+              мур мяу - комфорт с большой буквы. С нами никто не сможет отнять
+              это у вас.
+            </div>
+          </div>
+
+          <div class="services_item">
+            <img
+              class="services_icon"
+              src="https://i.ibb.co/Wyb9ZYt/hugs.png"
+              alt="hugs"
+              border="0"
+            />
+
+            <div class="services_title">Ты не один</div>
+            <div class="services_text">
+              что-то мягкое и теплое всегда будет ждать вас дома
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Devices -->
+    <section class="section section--devices" id="devices">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Мы мобильны</h3>
+          <h2 class="section_title">Всегда рядом</h2>
+
+          <div class="devices">
+            <div class="ipad">
+              <img
+                class="devices_item"
+                src="https://i.ibb.co/G7YvxZh/ipad.png"
+                alt="ipad"
+                border="0"
+              />
+            </div>
+            <div class="iphone">
+              <img
+                class="devices_item devices_item--iphone"
+                src="https://i.ibb.co/kQWxVX5/iphone.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Service what we do -->
+    <section class="section">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Услуги</h3>
+          <h2 class="section_title">Что мы делаем</h2>
+
+          <div class="section_text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              temporibus vel reprehenderit, adipisci commodi, laborum impedit
+              unde esse, ea maiores earum doloremque rem repudiandae molestiae
+              soluta sint mollitia laboriosam atque?
+            </p>
+          </div>
+        </div>
+        <div class="wedo">
+          <div class="wedo_item">
+            <img
+              class="wedo_img"
+              src="https://i.ibb.co/Hx5x5k0/pochemu-kot-mnet-lapami-cheloveka-2.jpg"
+              alt="pochemu-kot-mnet-lapami-cheloveka-2"
+              border="0"
+            />
+          </div>
+          <div class="wedo_item">
+            <!-- accordion -->
+            <div class="accordion">
+              <div class="accordion_item" data-collapse="#wedo_1">
+                <div class="accordion_header">
+                  <img
+                    class="acordion_icon"
+                    src="https://i.ibb.co/H7p1RR1/comfort-zone.png"
+                    alt="comfort-zone"
+                    border="0"
+                  />
+                  <div class="accordion_title">СОЗДАЕМ КОМФОРТ</div>
+                </div>
+                <div class="accordion_content" id="wedo_1">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequatur ratione obcaecati enim numquam hic aut, quas
+                  laudantium pariatur illum facere ab iure odio corporis tempore
+                  dolorum qui commodi officia at. Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Consequatur ratione obcaecati
+                  enim numquam hic aut, quas laudantium pariatur illum facere ab
+                  iure odio corporis tempore dolorum qui commodi officia
+                  at.lorem Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Nostrum amet libero reprehenderit qui asperiores
+                  adipisci sapiente, porro quos eligendi enim expedita commodi
+                  cum. Consequuntur nemo dolore nisi alias quidem debitis!
+                </div>
+              </div>
+              <div class="accordion_item active" data-collapse="#wedo_2">
+                <div class="accordion_header">
+                  <img
+                    class="acordion_icon"
+                    src="https://i.ibb.co/wQj9GB0/MASSAGE.png"
+                    alt="MASSAGE"
+                    border="0"
+                  />
+                  <div class="accordion_title">массаж</div>
+                </div>
+                <div
+                  class="accordion_content accordion_content--creativity"
+                  id="wedo_2"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequatur ratione obcaecati enim numquam hic aut, quas
+                  laudantium pariatur illum facere ab iure odio corporis tempore
+                  dolorum qui commodi officia at.lorem Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Nostrum amet libero
+                  reprehenderit qui asperiores adipisci sapiente, porro quos
+                  eligendi enim expedita commodi cum. Consequuntur nemo dolore
+                  nisi alias quidem debitis!
+                </div>
+              </div>
+              <div class="accordion_item" data-collapse="#wedo_3">
+                <div class="accordion_header">
+                  <img
+                    class="acordion_icon"
+                    src="https://i.ibb.co/S531ckK/relax.png"
+                    alt="relax"
+                    border="0"
+                  />
+                  <div class="accordion_title">релакс</div>
+                </div>
+                <div
+                  class="accordion_content accordion_content--web_design"
+                  id="wedo_3"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Consequatur ratione obcaecati enim numquam hic aut, quas
+                  laudantium pariatur illum facere ab iure odio corporis tempore
+                  dolorum qui commodi officia at.
+                </div>
+              </div>
+            </div>
+            <!-- accordion -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider reviews -->
+    <div class="section section--slider">
+      <div class="container">
+        <div class="reviews">
+          <div data-slider>
+            <div>
+              <div class="reviews_item">
+                <img
+                  class="reviews_photo"
+                  src="https://i.ibb.co/3rsM47m/begemot.webp"
+                  alt="begemot"
+                  border="0"
+                />
+                <div class="reviews_text">
+                  «Приятно слышать, что вы так вежливо обращаетесь с кошкой.
+                  Почему-то с котами обычно говорят на «ты», хотя ни один кот
+                  никогда ни с кем не пил на брудершафт.
+                </div>
+                <div class="reviews_autor">Бегемот</div>
+              </div>
+            </div>
+            <div>
+              <div class="reviews_item">
+                <img
+                  class="reviews_photo"
+                  src="https://i.ibb.co/1sftf1H/kity.png"
+                  alt="kity"
+                  border="0"
+                />
+                <div class="reviews_text">
+                  «Если бы кошачье мурлыканье продавалось в виде таблеток, на
+                  фармацевтическом рынке было бы идеальное лекарство от
+                  депрессии».
+                </div>
+                <div class="reviews_autor">kitty Kat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Кто мы</h3>
+          <h2 class="section_title">Познакомьтесь с нашей командой</h2>
+          <div class="section_text">
+            <p>
+              Мы все разные по характеру и темпераменту. У нас разная длина
+              усов, но мы проявляем одну большую любовь к общему делу! Нажмите
+              на фотографии, чтобы узнать больше о каждом из нас.
+            </p>
+          </div>
+        </div>
+        <!-- команда -->
+        <div class="cards_team">
+          <div class="cards_item card0">
+            <div class="border">
+              <h2>Барсик</h2>
+              <div class="cards_team_icons">
+                <a href=""><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                <a href=""
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_item card1">
+            <div class="border">
+              <h2>Пикуль</h2>
+              <div class="cards_team_icons">
+                <a href=""><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                <a href=""
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_item card2">
+            <div class="border">
+              <h2>Патрик</h2>
+              <div class="cards_team_icons">
+                <a href=""><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                <a href=""
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section section--slider">
+      <div class="container container_center">
+        <div class="section_header">
+          <h2 class="section_title">наши спонсоры</h2>
+          <div class="section_text"></div>
+        </div>
+
+        <div class="logos">
+          <div class="logos_item"><i class="fa-brands fa-google"></i></div>
+          <div class="logos_item"><i class="fa-brands fa-reddit"></i></div>
+          <div class="logos_item"><i class="fa-brands fa-tiktok"></i></div>
+          <div class="logos_item">
+            <i class="fa-brands fa-stack-overflow"></i>
+          </div>
+          <div class="logos_item"><i class="fa-brands fa-github"></i></div>
+          <div class="logos_item"><i class="fa-brands fa-apple"></i></div>
+        </div>
+      </div>
+    </div>
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Что мы делаем</h3>
+          <h2 class="section_title">Немного наших работ</h2>
+          <div class="section_text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="works">
+        <div class="works_col">
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/cXCVgpB/kitty-1.jpg"
+              alt="kitty-1"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Мэри и Макс</div>
+              <div class="work_text">
+                Милая Мария делает селфи с невероятным Максом.
+              </div>
+            </div>
+          </div>
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/RTtx6XT/kitty-2.jpg"
+              alt="kitty-2"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Расслабление для Дэнни</div>
+              <div class="work_text">
+                Денис в дружной компании отдыхает после рабочего дня.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="works_col">
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/xCwVspv/kitty-3.jpg"
+              alt="kitty-3"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Лера и тигренок</div>
+              <div class="work_text">Утро начинается с ласкового зверя</div>
+            </div>
+          </div>
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/R6Vr70t/kitty-4.jpg"
+              alt="kitty-4"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Мелисса и массажист</div>
+              <div class="work_text">
+                Счастье себе не купишь, а вот массаж сделать можно - это
+                примерно одно и то же!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works_col">
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/G3TjkMG/kitty-5.jpg"
+              alt="kitty-5"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Мила и Аврора друзья</div>
+              <div class="work_text">
+                А я хочу, чтобы мы со Авророй всегда были друзьями!
+              </div>
+            </div>
+          </div>
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/pjWBR6n/kitty-6.jpg"
+              alt="kitty-6"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Феликс и тапки</div>
+              <div class="work_text">с заботой о вас и ваших близких</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works_col">
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/5rb8PNH/kitty-7.jpg"
+              alt="kitty-7"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Даша и Диана</div>
+              <div class="work_text">и пусть весь мир подождет</div>
+            </div>
+          </div>
+          <div class="works_item">
+            <img
+              class="works_image"
+              src="https://i.ibb.co/3zKCj3p/kitty-8.jpg"
+              alt="kitty-8"
+              border="0"
+            />
+            <div class="works_info">
+              <div class="works_title">Два Льва</div>
+              <div class="work_text">
+                пушистик лева всегда защитит своего хозяина
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider reviews №2-->
+    <div class="section">
+      <div class="container">
+        <div class="reviews">
+          <div data-slider>
+            <div class="reviews_item">
+              <img
+                class="reviews_photo"
+                src="https://i.ibb.co/BLVbZz6/britanskii-kot.jpg"
+                alt="britanskii-kot"
+                border="0"
+              />
+              <div class="reviews_text">
+                “Мода проходит и уходит, котик остаётся.”
+              </div>
+              <div class="reviews_autor">Мурка Мурлыка</div>
+            </div>
+            <div class="reviews_item">
+              <img
+                class="reviews_photo"
+                src="https://i.ibb.co/WntVBnK/kot-pushistii20.jpg"
+                alt="kot-pushistii20"
+                border="0"
+              />
+              <div class="reviews_text">
+                “Два самых важных дня в твоей жизни: день, когда ты понял что
+                тебе нужен кот, и день, когда он у тебя появился”
+              </div>
+              <div class="reviews_autor">Снежок</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- clients -->
+    <section class="section--clients">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Счастливые клиенты</h3>
+          <h2 class="section_title">Что говорят о нас люди</h2>
+        </div>
+        <div class="clients">
+          <div class="clients_item">
+            <div class="client_content">
+              <img
+                class="client_photo"
+                src="https://i.ibb.co/rxJsgz8/masha-masayny.jpg"
+                alt="masha-masayny"
+                border="0"
+              />
+              <div class="client_name">Маша и масяня</div>
+
+              <div class="client_text">
+                Я помню день когда впервые увидела Её. Это была любовь с первого
+                взгляда. Теперь каждый раз когда я прихожу домой меня встречает
+                Масяня с легким мурчанием. И весь негатив который свалился на
+                меня за весь день остается за порогом. Спасибо вам "МурМяу".
+              </div>
+            </div>
+          </div>
+          <div class="clients_item">
+            <div class="client_content">
+              <img
+                class="client_photo"
+                src="https://i.ibb.co/PwDJM23/Evgeniya-barsic.jpg"
+                alt="Evgeniya-barsic"
+                border="0"
+              />
+              <div class="client_name">Евгения и Барсик</div>
+
+              <div class="client_text">
+                "МурМяу" это мир волшебства! Какое же безграничное счастье они
+                приносят в каждый дом. За что я им и благадарна.
+              </div>
+            </div>
+          </div>
+          <div class="clients_item">
+            <div class="client_content">
+              <img
+                class="client_photo"
+                src="https://i.ibb.co/BPzZgV6/trevel.jpg"
+                alt="trevel"
+                border="0"
+              />
+              <div class="client_name">Джеймс Буэна</div>
+              <div class="client_prof">Путешественник</div>
+              <div class="client_text">
+                Я обьездил пол мира в поисках счастья, но оно оказалось ближе
+                чем я думал. "МурМяу" подарили мне рыжего друга! Моего
+                маленького Льва.
+              </div>
+            </div>
+          </div>
+          <div class="clients_item">
+            <div class="client_content">
+              <img
+                class="client_photo"
+                src="https://i.ibb.co/c1cRkRf/moda-kitty.jpg"
+                alt="moda-kitty"
+                border="0"
+              />
+              <div class="client_name">Андреа Гуччи</div>
+              <div class="client_prof">Фотомодель</div>
+              <div class="client_text">
+                Модные дома - ничто по сравнению с "МурМяу". Это место где царит
+                красота.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section_header">
+          <h3 class="section_subtitle">Истории из жизни</h3>
+          <h2 class="section_title">МурМяу</h2>
+        </div>
+        <div class="blog">
+          <div class="blog_item">
+            <div class="blog_header">
+              <a href=""
+                ><img
+                  class="blog_photo"
+                  src="https://i.ibb.co/c3LNgjL/1-36956-1654676928-8519.png"
+                  alt="1-36956-1654676928-8519"
+                  border="0"
+              /></a>
+              <div class="blog_date">
+                <div class="blog_date_day">14</div>
+                Jan
+              </div>
+            </div>
+            <div class="blog_content">
+              <div class="blog_title">
+                <a href="#">"Мур Мяу" пригласили в театр "На грани"</a>
+              </div>
+              <div class="blog_text">
+                Наши котята приняли участие в постановке "кот на крыши
+                театральной"
+              </div>
+            </div>
+            <div class="blog_footer">
+              <div class="blog_stat">
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-eye"></i>542</sapn
+                >
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-comment-dots"></i>17</sapn
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog_item">
+            <div class="blog_header">
+              <a href=""
+                ><img
+                  class="blog_photo"
+                  src="https://i.ibb.co/4j1p939/Maslenitsa.jpg"
+                  alt="Maslenitsa"
+                  border="0"
+              /></a>
+              <div class="blog_date">
+                <div class="blog_date_day">14</div>
+                Jan
+              </div>
+            </div>
+            <div class="blog_content">
+              <div class="blog_title">
+                <a href="#">Lorem ipsum dolor sit am</a>
+              </div>
+              <div class="blog_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, rem.
+              </div>
+            </div>
+            <div class="blog_footer">
+              <div class="blog_stat">
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-eye"></i>542</sapn
+                >
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-comment-dots"></i>17</sapn
+                >
+              </div>
+            </div>
+          </div>
+          <div class="blog_item">
+            <div class="blog_header">
+              <a href=""
+                ><img
+                  class="blog_photo"
+                  src="https://i.ibb.co/9Why3z9/yrmarka.jpg"
+                  alt="yrmarka"
+                  border="0"
+              /></a>
+              <div class="blog_date">
+                <div class="blog_date_day">14</div>
+                Jan
+              </div>
+            </div>
+            <div class="blog_content">
+              <div class="blog_title">
+                <a href="#">Lorem ipsum dolor sit am</a>
+              </div>
+              <div class="blog_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, rem.
+              </div>
+            </div>
+            <div class="blog_footer">
+              <div class="blog_stat">
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-eye"></i>542</sapn
+                >
+                <sapn class="blog_stat_item"
+                  ><i class="fa-solid fa-comment-dots"></i>17</sapn
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151635.88764077713!2d7.9422322012730175!3d53.57007051962378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b69195cd38741d%3A0x426cf7763005c70!2z0JLQuNC70YzQs9C10LvRjNC80YHRhdCw0YTQtdC9LCDQk9C10YDQvNCw0L3QuNGP!5e0!3m2!1sru!2snl!4v1666277765805!5m2!1sru!2snl"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer_inner">
+          <div class="footer_col footer_col--first">
+            <div class="footer_logo">МурМяу</div>
+            <div class="footer_text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Necessitatibus nostrum quae ratione provident ducimus laudantium
+              quod in inventore corrupti. Dolores at quod officiis eaque velit
+              accusamus, expedita ut fuga laboriosam.
+            </div>
+            <div class="footer_social">
+              <div class="social_header"><b>15k</b>followers</div>
+              <div class="social_content">
+                Follow Us:
+                <a href="#">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                  <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                  <i class="fa fa-telegram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <form class="subscribe" action="/" method="post">
+              <input
+                class="subscribe_input"
+                type="email"
+                name="name"
+                placeholder="You Email..."
+              />
+              <button class="subscribe_button" type="submit">subscribe</button>
+            </form>
+          </div>
+          <div class="footer_col footer_col--second">
+            <div class="footer_title">Blogs</div>
+            <div class="blogs_item">
+              <img
+                class="blogs_img"
+                src="https://via.placeholder.com/210x210"
+                alt=""
+              />
+              <div class="blogs_content">
+                <a class="blogs_title" href="#"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi
+                </a>
+                <div class="blogs_date">Jan 9, 2022</div>
+              </div>
+            </div>
+            <div class="blogs_item">
+              <img
+                class="blogs_img"
+                src="https://via.placeholder.com/210x210"
+                alt=""
+              />
+              <div class="blogs_content">
+                <a class="blogs_title" href="#"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi
+                </a>
+                <div class="blogs_date">Jan 9, 2022</div>
+              </div>
+            </div>
+            <div class="blogs_item">
+              <img
+                class="blogs_img"
+                src="https://via.placeholder.com/210x210"
+                alt=""
+              />
+              <div class="blogs_content">
+                <a class="blogs_title" href="#"
+                  >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quasi
+                </a>
+                <div class="blogs_date">Jan 9, 2022</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_col footer_col--third">
+            <div class="footer_title">Instagram</div>
+
+            <div class="instagram">
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/bRXt6yL/insta3.jpg"
+                  alt="insta3"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/B4z4sjn/insta2.jpg"
+                  alt="insta2"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/Kx9Snxd/insta6.jpg"
+                  alt="insta6"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/mT22WYQ/insta4.jpg"
+                  alt="insta4"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/6ZfmNCt/INSTA9.png"
+                  alt="INSTA9"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/p1jhvxp/insta1.jpg"
+                  alt="insta1"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/W09sr2V/insta7.jpg"
+                  alt="insta7"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/r5yphyG/insta8.jpg"
+                  alt="insta8"
+                  border="0"
+                />
+              </a>
+              <a class="instagram_item" href="#">
+                <img
+                  src="https://i.ibb.co/yk2tRRF/insta5.jpg"
+                  alt="insta5"
+                  border="0"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--footer_inner-->
+      </div>
+    </footer>
+  </body>
+</html>
